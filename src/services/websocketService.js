@@ -1,4 +1,3 @@
-const socketIOClient = require("socket.io-client");
 const io = require("socket.io")(4001);
 const axios = require("axios");
 

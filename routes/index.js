@@ -5,14 +5,12 @@ var websocket = require('../src/services/websocketService');
 var encryption = require('../src/services/encryptionService');
 var mailService = require('../src/services/mailService');
 
-websocket.socketServer();
-mqttService.mqttPublisher("200");
-
+mqttService.mqttPublisher("30");
+//websocket.socketServer();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
-  mqttService.mqttSubscriber();
- 
+ // mqttService.mqttSubscriber();
 
 });
 

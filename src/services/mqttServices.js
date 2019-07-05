@@ -29,7 +29,7 @@ module.exports = {
 
         if (client.connected == true){
 	
-            client.publish(seTopic,msg1,options);
+            client.publish(edTopic,msg1,options);
             
             }
             
